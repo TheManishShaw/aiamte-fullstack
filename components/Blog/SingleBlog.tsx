@@ -16,7 +16,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
     description,
     _createdAt,
   } = blog;
-  const date = format(new Date(_createdAt), "dd-MMM-yyyy");
+  const date = format(new Date("12-12-2023"), "dd-MMM-yyyy");
   return (
     <>
       <div
