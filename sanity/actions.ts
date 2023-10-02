@@ -57,10 +57,42 @@ export const getTeams = async () => {
 };
 export const getSingleBlog = async (id: any) => {
   try {
-    const blog = await readClient.fetch(
-      `*[_type == "resource" && _id == "${id}"]`
-    );
+    const blog = await readClient.fetch(`*[_type == "blog" && _id == "${id}"]{
+      _id,
+      author,
+        popularTags,
+        views,
+        category,
+        title,
+        _createdAt,
+        description,
+        "authorImg" : authorImg.asset->url ,
+        "poster": poster.asset->url,
+        popularTags,
+    }`);
+
     return blog[0];
+  } catch (error) {
+    console.log(error);
+  }
+};
+export const getBlogs = async () => {
+  try {
+    const blog = await readClient.fetch(`*[_type == "blog"]{
+      title,
+      _id,
+      downloadLink,
+      "image":poster.asset->url,
+      views,
+      slug,
+      category,
+      description,
+      "authorImg":image.asset->url,
+      _createdAt,
+      popularTags,
+      author,
+    }`);
+    return blog;
   } catch (error) {
     console.log(error);
   }
@@ -91,12 +123,3 @@ export const getResource = async (params: GetResourceParams) => {
     console.log(error);
   }
 };
-
-// export const handleFormData = async (data: any) => {
-//   try {
-//     const res = await writeClient.create({ _type: "contact", ...data });
-//     return res;
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };

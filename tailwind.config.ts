@@ -56,6 +56,28 @@ module.exports = {
         primary: "#C21F1E",
         yellow: "#FBB040",
         "body-color": "#959CB1",
+
+        // primary: {
+        //   DEFAULT: "#0085ff",
+        //   100: "#0085ff",
+        //   200: "#69b4ff",
+        // },
+        accent: {
+          DEFAULT: "#006fff",
+          100: "#006fff",
+          200: "#e1ffff",
+        },
+        text: {
+          DEFAULT: "#FFFFFF",
+          100: "#FFFFFF",
+          200: "#9e9e9e",
+        },
+        bg: {
+          DEFAULT: "#1E1E1E",
+          100: "#1E1E1E",
+          200: "#2d2d2d",
+          300: "#454545",
+        },
       },
       backgroundImage: {
         banner: "url('/public/jsm_resources_banner.svg')",

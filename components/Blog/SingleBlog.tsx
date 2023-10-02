@@ -1,11 +1,22 @@
 import { Blog } from "@/types/blog";
 import Image from "next/image";
 import Link from "next/link";
+import { format } from "date-fns";
 
 const SingleBlog = ({ blog }: { blog: Blog }) => {
-  const { title, image, author, publishDate, category, _id, description } =
-    blog;
-
+  const {
+    popularTags,
+    category,
+    title,
+    _id,
+    image,
+    views,
+    authorImg,
+    author,
+    description,
+    _createdAt,
+  } = blog;
+  const date = format(new Date(_createdAt), "dd-MMM-yyyy");
   return (
     <>
       <div
@@ -42,16 +53,16 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
               </div>
               <div className="w-full">
                 <h4 className="mb-1 text-sm font-medium text-dark dark:text-white">
-                  By {author?.name}
+                  By
                 </h4>
-                <p className="text-xs text-body-color">{author?.designation}</p>
+                <p className="text-xs text-body-color">{author}</p>
               </div>
             </div>
             <div className="inline-block">
               <h4 className="mb-1 text-sm font-medium text-dark dark:text-white">
                 Date
               </h4>
-              <p className="text-xs text-body-color">{publishDate}</p>
+              <p className="text-xs text-body-color">{date}</p>
             </div>
           </div>
         </div>

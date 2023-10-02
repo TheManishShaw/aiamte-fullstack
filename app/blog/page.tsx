@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import ResourceCard from "@/components/ResourceCard";
 import SearchForm from "@/components/SearchForm";
 import SubHeader from "@/components/SubHeader";
-import { getResource, getResourcePlaylist } from "@/sanity/actions";
+import { getBlogs, getResource, getResourcePlaylist } from "@/sanity/actions";
 import { Metadata } from "next";
 import React from "react";
 
@@ -23,7 +23,8 @@ const page = async ({ searchParams }: Props) => {
     page: "1",
   });
 
-  const resourcesPlaylist = await getResourcePlaylist();
+  // const resourcesPlaylist = await getResourcePlaylist();
+  const blogs = await getBlogs();
 
   return (
     <main className="flex-center paddings mx-auto w-full max-w-screen-2xl flex-col">
@@ -62,16 +63,10 @@ const page = async ({ searchParams }: Props) => {
           </div>
         </section>
       )}
-      {resourcesPlaylist.map((item: any) => (
-        <div
-          key={item._id}
-          className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3"
-        >
-          {item.resources.map((resource: any) => (
-            <SingleBlog blog={resource} />
-          ))}
-        </div>
-      ))}
+
+      <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
+        {blogs && blogs.map((blog: any) => <SingleBlog blog={blog} />)}
+      </div>
     </main>
   );
 };
