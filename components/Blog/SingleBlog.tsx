@@ -16,11 +16,11 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
     description,
     _createdAt,
   } = blog;
-  const date = format(new Date("12-12-2023"), "dd-MMM-yyyy");
+  const date = format(new Date(_createdAt), "dd-MMM-yyyy");
   return (
     <>
       <div
-        className="wow fadeInUp relative overflow-hidden rounded-md bg-white shadow-one dark:bg-dark"
+        className="wow fadeInUp relative overflow-hidden bg-white shadow-one dark:bg-secondary border border-gray-200 dark:border-transparent hover:border-transparent hover:shadow-xl transition-all duration-300 rounded-md dark:hover:border-transparent dark:hover:shadow-gray-800/[.4] hover:scale-[1.01]"
         data-wow-delay=".1s"
       >
         <Link href={`/blog/${_id}`} className="relative block h-[220px] w-full">

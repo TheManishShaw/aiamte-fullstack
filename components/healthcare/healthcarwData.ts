@@ -154,129 +154,48 @@ export const healthCareServices: HealthcareData[] = [
 export const HealthcareSectionData = [
   {
     id: 1,
-    title: "Modality MRI",
+    title: "Audio/Speech Processing",
     description:
-      "This enables extensive utilization of medical image data for more effective diagnosis of disease, prognosis, and treatment. This basically involves making various 4D or 3D information, and this information improves human comprehension by utilizing past knowledge, shape, texture, and information of contour, background information via image sequence, and other types of factors. The most conventional process is used to detect and diagnose abnormal or normal situations through MRIs name description",
+      "Our audio and speech processing services harness the power of advanced algorithms and machine learning to analyze and enhance audio data for various applications. We specialize in extracting valuable insights from audio recordings, improving quality, and enabling seamless integration into AI-driven solutions.",
     image: "/images/services/cloud.png",
-    RightSideContent: [
+    ServicesOffered: [
       {
         id: 1,
-        title: "MRI Brain Lesions",
-        description: "Multiple Sclerosis, Brain Tumor , Traumatic injuries.",
+        title: "Speech Recognition",
+        description:
+          "Accurately transcribe spoken words into text, enabling automated voice assistants, transcription services, and voice-controlled applications.",
       },
       {
         id: 2,
-        title: "MRI Spine",
-        description: "Herniated Disc, Traumatic Injury, Healthy Controls.",
+        title: "Emotion Analysis",
+        description:
+          "Detect emotions expressed in audio, useful for sentiment analysis, customer feedback analysis, and virtual assistants with emotional intelligence.",
       },
       {
         id: 3,
-        title: "MRI Prostate",
-        description: "Cancer, Healthy Controls",
+        title: "Speaker Identification",
+        description:
+          "Distinguish between different speakers in audio recordings, valuable for security applications, customer service, and content indexing.",
       },
     ],
-    LeftSideContent: [
+    AdvancedFeatures: [
       {
         id: 1,
-        title: "MRI Breast",
+        title: "Customization",
         description:
-          "Nodules, Cancer, Post Mastectomy, Implants, Healthy controls.",
+          "Tailored solutions to meet your specific audio processing needs, whether it's multiple languages, dialects, or industry-specific jargon.",
       },
       {
         id: 2,
-        title: "MRI Abdomen w/wo Contrast, MRCPs",
+        title: "Noise Reduction",
         description:
-          "Suspicious Hepatocellular Nodules/Carcinomas, Pancreatic carcinomas, Renal Diseases, Healthy.",
+          "Enhance audio quality by removing background noise, ensuring clarity in recordings for analysis or customer engagement.",
       },
       {
         id: 3,
-        title: "MRI Knee",
-        description: "ACL/other diseases, Healthy",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Modality CT scan ",
-    description:
-      "One of the other conventional diagnosis processes with imaging method and combines with computer X-ray technology to generate inside images of the body. This process comes under the standard computerized image-examining diagnosis. The CT-scan image undergoes a complex process that includes improvement of the image, acquisition, extraction of key features, and the interpretation of the outcome.",
-    image: "/images/services/cloud.png",
-    RightSideContent: [
-      {
-        id: 1,
-        title: "CT Brain",
+        title: "Multilingual Support",
         description:
-          ": Intracranial Haemorrhage, Subdural Hematomas (Acute/Chronic), Epidural Hematomas, Healthy Controls",
-      },
-      {
-        id: 2,
-        title: "CT Thorax",
-        description:
-          " Pulmonary nodules, Carcinomas, Other diseases, Healthy Controls.",
-      },
-      {
-        id: 3,
-        title: "CT Abdomen w/wo contrast",
-        description:
-          " Acute cholecystitis, Alcoholic liver disease, Cholelithiasis, Pancreatic pseudocyst, Pancreatitis",
-      },
-    ],
-    LeftSideContent: [
-      {
-        id: 1,
-        title: "CT Pelvis",
-        description: " Fractured, Healthy Controls",
-      },
-      {
-        id: 2,
-        title: "CT Joints",
-        description: "Fractured, Healthy, Shoulder, Elbows, Hip, Knee",
-      },
-      {
-        id: 3,
-        title: "CT Spine",
-        description: "CT long bones",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Modality X-rays ",
-    description:
-      "X-ray testing is performed for checking the component's integrity and structure within it. For medical purposes and to identify unusual conditions within an individual's body, images from X-rays of an object being tested can be produced at various positions and energies.Aimate introduces you to high-quality X-ray image datasets which are important for medical diagnosis and research.",
-    image: "/images/services/cloud.png",
-    RightSideContent: [
-      {
-        id: 1,
-        title: "Skull",
-        description: "",
-      },
-      {
-        id: 2,
-        title: "Ribs ",
-        description: " ",
-      },
-      {
-        id: 3,
-        title: "Shoulder",
-        description: " ",
-      },
-    ],
-    LeftSideContent: [
-      {
-        id: 1,
-        title: "Joints",
-        description: "",
-      },
-      {
-        id: 2,
-        title: "Upper extremities",
-        description: "",
-      },
-      {
-        id: 3,
-        title: "Lower extremities",
-        description: "",
+          "Support for a wide range of languages and accents, making our services inclusive and adaptable to global markets.",
       },
     ],
   },

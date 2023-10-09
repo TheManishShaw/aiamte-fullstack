@@ -33,7 +33,7 @@ const Filters = () => {
       {links.map((link) => (
         <button
           className={`${
-            active === link ? "gradient_blue-purple" : ""
+            active === link ? "bg-primary" : ""
           } whitespace-nowrap rounded-lg px-8 py-2.5 capitalize`}
           key={link}
           onClick={() => handleFilter(link)}

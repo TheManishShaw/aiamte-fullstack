@@ -39,7 +39,7 @@ const menuData: Menu[] = [
       },
       {
         id: 45,
-        title: "Data Annotation",
+        title: "Annotation & Labeling",
         path: "/service/data-annotation",
         newTab: false,
       },

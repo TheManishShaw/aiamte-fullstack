@@ -1,55 +1,49 @@
+import { aboutFeatureSectionData } from "@/utils/aboutFeaturesectionData";
 import Image from "next/image";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="wow fadeInUp relative mx-auto mb-12 w-[80%] text-center lg:m-0">
-              <Image
-                src="/images/about/what-we-do.png"
-                alt="about image"
-                width={1000}
-                height={700}
-                priority
+    <>
+      <section className="">
+        <div className="container px-6 py-10 mx-auto">
+          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+            explore <br /> How we works
+          </h1>
+
+          <div className="mt-2">
+            <span className="inline-block w-40 h-1 bg-primary rounded-full"></span>
+            <span className="inline-block w-3 h-1 ml-1 bg-primary rounded-full"></span>
+            <span className="inline-block w-1 h-1 ml-1 bg-primary rounded-full"></span>
+          </div>
+
+          <div className="mt-8 xl:mt-12 lg:flex lg:items-center text-base !leading-relaxed text-body-color">
+            <div className="grid w-full grid-cols-1 gap-8 lg:w-1/2 xl:gap-16 md:grid-cols-2">
+              {aboutFeatureSectionData.map((item) => (
+                <div key={item.id} className="space-y-3">
+                  <span className="inline-block p-3 text-primary bg-primary/20 rounded-xl dark:text-white dark:primary">
+                    {item.icon}
+                  </span>
+
+                  <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
+                    {item.title}
+                  </h1>
+
+                  <p className="">{item.paragraph}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="hidden lg:flex lg:w-1/2 lg:justify-center">
+              <img
+                className="w-[28rem] h-[28rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-full"
+                src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
               />
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

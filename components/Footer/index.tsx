@@ -100,31 +100,31 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      href="/blogs"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Blog{" "}
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      href="/service"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
-                      Pricing{" "}
-                    </a>
+                      Services{" "}
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      href="/about"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       About{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -137,13 +137,13 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      href="/terms-of-use"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
-                      TOS{" "}
-                    </a>
+                      Terms of use{" "}
+                    </Link>
                   </li>
                   <li>
                     <Link
@@ -152,15 +152,6 @@ const Footer = () => {
                     >
                       Privacy Policy{" "}
                     </Link>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Refund Policy{" "}
-                    </a>
                   </li>
                 </ul>
               </div>
@@ -173,15 +164,6 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Open Support Ticket{" "}
-                    </a>
-                  </li>
-                  <li>
                     <Link
                       href="/terms-of-use"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
@@ -191,7 +173,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="/about"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
@@ -206,15 +188,14 @@ const Footer = () => {
         <div className="bg-primary/10 py-4">
           <div className="container">
             <p className="text-center text-base text-body-color dark:text-white">
-              © 2023 Aimate. All rights reserved.
-              {/* Developed by */}
-              {/* <a
+              © 2023 Aimate. All rights reserved. Developed by
+              <a
                 className="pl-1 hover:text-primary"
                 href="https://manishshaw.in"
                 rel="nofollow noopener"
               >
                 Manish Shaw
-              </a> */}
+              </a>
             </p>
           </div>
         </div>

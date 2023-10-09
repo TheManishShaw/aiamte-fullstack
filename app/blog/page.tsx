@@ -30,8 +30,8 @@ const page = async ({ searchParams }: Props) => {
     <main className="flex-center paddings mx-auto w-full max-w-screen-2xl flex-col">
       <section className="nav-padding w-full">
         <div className="flex-center relative min-h-[274px] w-full flex-col rounded-xl bg-banner bg-cover bg-center text-center">
-          <h1 className="sm:heading1 heading2 mb-6 text-center text-white">
-            Aiamte Resources
+          <h1 className="sm:heading1 heading2 mb-6 text-center text-white dark:text-white">
+            Aimate Resources
           </h1>
         </div>
         <SearchForm />
@@ -58,7 +58,10 @@ const page = async ({ searchParams }: Props) => {
                 />
               ))
             ) : (
-              <p className="body-regular text-white-400"> No resource found</p>
+              <p className="body-regular text-white-400 mb-4">
+                {" "}
+                No resource found
+              </p>
             )}
           </div>
         </section>

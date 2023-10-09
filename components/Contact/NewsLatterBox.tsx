@@ -11,11 +11,9 @@ const NewsLatterBox = () => {
     formState: { errors },
   } = useForm();
   const handleFormSubmit = async (data: any) => {
-    console.log(data);
     const res = await writeClient
       .create({ _type: "subscribeForm", ...data })
       .then((result) => {
-        console.log(result);
         if (result._id) {
           toast.success("Form submitted successfully");
           return {
@@ -41,8 +39,8 @@ const NewsLatterBox = () => {
         Subscribe to receive future updates
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
+        Stay informed and never miss out on future updates by subscribing to our
+        newsletter or notifications.
       </p>
       <form onSubmit={handleSubmit(handleFormSubmit)}>
         <input

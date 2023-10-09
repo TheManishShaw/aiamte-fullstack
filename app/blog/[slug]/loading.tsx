@@ -8,14 +8,14 @@ const loading = () => {
         <div className=" w-2/3">
           <Skeleton className="w-full h-[250px] rounded-lg bg-slate-400" />
           <section className="mt-6 flex w-full flex-col sm:mt-10">
-            <Skeleton className="w-full h-10 rounded-full bg-slate-400 mb-10" />
-            <Skeleton className=" h-16 w-full rounded-full bg-slate-400 mb-10" />
-            <Skeleton className=" h-10 w-full rounded-full bg-slate-400 mb-10" />
-            <Skeleton className=" h-20 w-full rounded-full bg-slate-400 mb-10" />
-            <Skeleton className=" h-8 w-full rounded-full bg-slate-400 mb-10" />
-            <Skeleton className=" h-16 w-full rounded-full bg-slate-400 mb-10" />
-            <Skeleton className=" h-10 w-full rounded-full bg-slate-400 mb-10" />
-            <Skeleton className=" h-20 w-full rounded-full bg-slate-400 mb-10" />
+            <Skeleton className="w-full h-20  bg-slate-400 mb-10" />
+            <Skeleton className=" h-6 w-full  bg-slate-400 mb-10" />
+            <Skeleton className=" h-32 w-full  bg-slate-400 mb-10" />
+            <Skeleton className=" h-8 w-full  bg-slate-400 mb-10" />
+            <Skeleton className=" h-64 w-full  bg-slate-400 mb-10" />
+            <Skeleton className=" h-20 w-full  bg-slate-400 mb-10" />
+            <Skeleton className=" h-10 w-full  bg-slate-400 mb-10" />
+            <Skeleton className=" h-12 w-full bg-slate-400 mb-10" />
           </section>
         </div>
         <div className="w-1/3">

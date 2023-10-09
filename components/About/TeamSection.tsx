@@ -10,7 +10,7 @@ export const Team = async () => {
     <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
       <div className="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl">
         <div>
-          <p className="text-teal-900 bg-teal-accent-400 mb-4 inline-block rounded-full px-3 py-px text-xs font-semibold uppercase tracking-wider">
+          <p className="text-primary bg-teal-accent-400 mb-4 inline-block rounded-full px-3 py-px text-xs font-semibold uppercase tracking-wider">
             Core Team
           </p>
         </div>
@@ -19,7 +19,7 @@ export const Team = async () => {
             <svg
               viewBox="0 0 52 24"
               fill="currentColor"
-              className="text-blue-gray-100 absolute top-0 left-0 z-0 -mt-8 -ml-20 hidden w-32 sm:block lg:-ml-28 lg:-mt-10 lg:w-32"
+              className="text-primary absolute top-0 left-0 z-0 -mt-8 -ml-20 hidden w-32 sm:block lg:-ml-28 lg:-mt-10 lg:w-32"
             >
               <defs>
                 <pattern

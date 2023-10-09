@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Features from "@/components/Features";
 
 const DocAi = () => {
   return (
@@ -117,7 +118,7 @@ const DocAi = () => {
           </div>
         </div>
       </section> */}
-      <section className="container mx-auto text-base font-medium leading-relaxed text-body-color mt-8 p-8 bg-transparent shadow-lg rounded-lg">
+      <section className="container mx-auto text-base font-medium leading-relaxed text-body-color mt-8 p-8 bg-transparent  rounded-lg">
         {/* <h2 className="text-3xl font-semibold mb-4 heading1">Document AI</h2>
         <p className=" mb-6">
           Document AI, also known as Document Automation, is a technology that
@@ -206,6 +207,7 @@ const DocAi = () => {
           {/* Add more Document AI types here */}
         </div>
       </section>
+      <Features />
     </>
   );
 };

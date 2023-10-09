@@ -6,7 +6,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, image, title, paragraph, url } = feature;
   return (
     <>
-      <div className="wrapper  text-gray-900 group transform cursor-pointer antialiased  transition-all duration-200 ease-in-out hover:scale-105">
+      {/* <div className="wrapper  text-gray-900 group transform cursor-pointer antialiased  transition-all duration-200 ease-in-out hover:scale-105">
         <Link href={url}>
           <img
             src={image}
@@ -26,28 +26,28 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
             </div>
           </div>
         </Link>
-      </div>
-      {/* <div className="w-full">
-        <div className="wow fadeInUp" data-wow-delay=".15s">
-          <div className="mb-10 flex   items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-            <Image
-              src={image}
-              className=" rounded-xl"
-              alt="about image"
-              width={400}
-              height={400}
-              priority
-            />
-            {icon}
-          </div>
-          <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+      </div> */}
+
+      <Link
+        className="group flex flex-col h-full  dark:bg-secondary border border-gray-200 dark:border-transparent  hover:shadow-xl transition-all duration-300 rounded-md p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-primary/[.2] hover:scale-[1.01]"
+        href={url}
+      >
+        <div className="aspect-w-16 aspect-h-11">
+          <img
+            className="w-full object-cover h-64 rounded-md"
+            src={image}
+            alt="Image Description"
+          />
+        </div>
+        <div className="my-6">
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
             {title}
           </h3>
-          <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
+          <p className="mt-5 text-base line-clamp-3 font-medium leading-relaxed text-body-color">
             {paragraph}
           </p>
         </div>
-      </div> */}
+      </Link>
     </>
   );
 };

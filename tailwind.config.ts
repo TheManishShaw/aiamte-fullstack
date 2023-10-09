@@ -54,6 +54,7 @@ module.exports = {
 
         dark: "#171717",
         primary: "#C21F1E",
+        secondary: "#171717",
         yellow: "#FBB040",
         "body-color": "#959CB1",
 
@@ -80,7 +81,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        banner: "url('/public/jsm_resources_banner.svg')",
+        banner: "url('/images/download.jpg')",
       },
       keyframes: {
         "accordion-down": {
@@ -96,12 +97,6 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-    },
-
-    boxShadow: {
-      signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",
-      one: "0px 2px 3px rgba(7, 7, 77, 0.05)",
-      sticky: "inset 0 -1px 0 0 rgba(0, 0, 0, 0.1)",
     },
   },
   plugins: [require("tailwindcss-animate")],

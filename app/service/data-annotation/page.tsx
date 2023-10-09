@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Features from "@/components/Features";
 
 const DataAnnotation = () => {
   return (
@@ -9,16 +10,7 @@ const DataAnnotation = () => {
         learning models. Aimate offers various types of data annotation
         services to meet your needs."
       />
-      <section className="container mx-auto mt-8 p-8 bg-transparent text-base font-medium leading-relaxed text-body-color shadow-lg rounded-lg">
-        {/* <h2 className="text-3xl font-semibold heading2 mb-4">
-          Data Annotation Services
-        </h2>
-        <p className=" mb-6">
-          Data annotation is the process of labeling data to train machine
-          learning models. Aimate offers various types of data annotation
-          services to meet your needs.
-        </p> */}
-
+      <section className="container mx-auto mt-8 p-8 bg-transparent text-base font-medium leading-relaxed text-body-color ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="flex items-center">
             <img
@@ -118,6 +110,7 @@ const DataAnnotation = () => {
           </div>
         </div>
       </section>
+      <Features />
     </>
   );
 };

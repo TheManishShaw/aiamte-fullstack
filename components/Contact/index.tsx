@@ -17,7 +17,6 @@ const Contact = () => {
     const res = await writeClient
       .create({ _type: "contact", ...data })
       .then((result) => {
-        console.log(result);
         if (result._id) {
           return {
             statusCode: 201, // Bad Request
@@ -105,7 +104,7 @@ const Contact = () => {
                         rows={5}
                         {...register("message", { required: true })}
                         placeholder="Enter your Message"
-                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#c96060b5] dark:shadow-signUp"
+                        className=" resize-none w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#c96060b5] dark:shadow-signUp"
                       ></textarea>
                       {errors.message && (
                         <span className="text-red-500">

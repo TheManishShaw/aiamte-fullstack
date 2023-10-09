@@ -1,269 +1,262 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Features from "@/components/Features";
 import Image from "next/image";
+
+const dataList = [
+  {
+    id: 1,
+    title: "Object Detection",
+    description:
+      " Identifies and locates objects within an image or video stream, often used in applications like surveillance, autonomous vehicles, and image tagging.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: "Object detection enables computers to identify and locate multiple objects within an image or video frame",
+      },
+    ],
+    application:
+      "Autonomous vehicles, surveillance systems, and retail inventory management",
+  },
+  {
+    id: 2,
+    title: "Image Classification",
+    description:
+      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: "This type of computer vision AI categorizes images into predefined classes or labels, allowing machines to recognize and classify objects.",
+      },
+    ],
+    application:
+      "Image search engines, medical image analysis, and content moderation in social media.",
+  },
+  {
+    id: 3,
+    title: "Facial Recognition",
+    description:
+      " Recognizes and verifies individuals by analyzing unique facial features, commonly used in security systems and biometric authentication.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: "Facial recognition identifies and verifies individuals by analyzing unique facial features, such as the arrangement of eyes, nose, and mouth.",
+      },
+    ],
+    application:
+      "Security access control, unlocking smartphones, and tracking attendance.",
+  },
+  {
+    id: 4,
+    title: " Image Segmentation",
+    description:
+      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: " Image segmentation divides an image into distinct regions, making it possible to identify and analyze specific objects or areas within an image.",
+      },
+    ],
+    application:
+      "Medical image analysis, autonomous drones, and background removal in photography.",
+  },
+  {
+    id: 5,
+    title: " Optical Character Recognition (OCR)",
+    description:
+      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: "OCR extracts text from images or scanned documents, making printed or handwritten text accessible for digital processing.",
+      },
+    ],
+    application:
+      "Digitizing printed documents, assisting visually impaired individuals, and automating data entry.",
+  },
+  {
+    id: 6,
+    title: "Gesture Recognition",
+    description:
+      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: "Gesture recognition interprets hand movements or body gestures, allowing human-computer interaction through gestures.",
+      },
+    ],
+    application:
+      "Virtual reality (VR) and augmented reality (AR) interfaces, gaming, and sign language interpretation.",
+  },
+  {
+    id: 7,
+    title: "Scene Understanding",
+    description:
+      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: "Scene understanding goes beyond object detection to comprehend the context and relationships between objects within a scene.",
+      },
+    ],
+    application:
+      "Robotics navigation, autonomous drones, and augmented reality gaming.",
+  },
+  {
+    id: 8,
+    title: "Anomaly Detection",
+    description:
+      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: " Anomaly detection identifies rare or unexpected patterns or events within a dataset, which can be crucial for fraud detection or quality control.",
+      },
+    ],
+    application:
+      " Intrusion detection in cybersecurity, manufacturing quality control, and predictive maintenance.",
+  },
+  {
+    id: 9,
+    title: " Emotion Recognition",
+    description:
+      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: "Emotion recognition assesses the emotional state of individuals by analyzing facial expressions, voice, or physiological signals.",
+      },
+    ],
+    application:
+      "Mental health monitoring, customer sentiment analysis, and human-computer emotional interaction.",
+  },
+  {
+    id: 10,
+    title: "Video Analysis",
+    description:
+      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
+    image: "/images/services/image-reco.jpg",
+    feature: [
+      {
+        text: "Video analysis involves the continuous processing of video streams, allowing for real-time monitoring and decision-making.",
+      },
+    ],
+    application:
+      "Traffic management, video surveillance, and sports analytics.",
+  },
+];
 
 const ComputerVision = () => {
   return (
     <>
       <Breadcrumb
         pageName="Computer Vision"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Computer Vision AI is continuously advancing, thanks to machine learning techniques, deep neural networks, and access to large datasets."
       />
-      <div className="relative overflow-hidden bg-gray-900 pt-16 pb-32 space-y-24">
-        <div className="relative">
-          <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
-            <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
-              <div>
+
+      <section className="container mx-auto text-base font-medium leading-relaxed text-body-color  p-8 bg-transparent  rounded-lg">
+        <div className="mx-auto m-12 flex max-w-[75rem] flex-col items-center space-y-4 text-center">
+          <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl text-black-100">
+            Unlocking the Power of Visual <br /> Data
+          </h2>
+
+          <p className="max-w-[100%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            Computer Vision, a subfield of artificial intelligence (AI), is
+            revolutionizing industries and everyday life by enabling machines to
+            interpret and understand visual information, just like humans do.
+            This technology empowers computers to analyze, process, and make
+            decisions based on images or video streams. Computer Vision AI
+            encompasses a wide range of applications and is continually
+            evolving. Let's explore different types of computer vision AI and
+            their key features
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {dataList.map((data) =>
+            data.id % 2 !== 0 ? (
+              <>
+                <div className="flex items-center">
+                  <img
+                    src={data.image}
+                    alt="Image Recognition"
+                    className="max-w-full rounded-lg shadow-md"
+                  />
+                </div>
                 <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      className="h-8 w-8 text-white"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-                      ></path>
-                    </svg>
-                  </span>
-                </div>
+                  <h3 className="text-2xl font-semibold mb-2 heading2">
+                    {data.title}
+                  </h3>
+                  <p className="">{data.description}</p>
+                  {data.feature &&
+                    data.feature.map((item) => (
+                      <>
+                        <h4 className="text-xl font-semibold mt-4">
+                          Features:
+                        </h4>
+                        <ul className="list-disc pl-8">
+                          <li> {item.text}</li>
+                        </ul>
+                      </>
+                    ))}
 
-                <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Natural Language Processing (NLP):
-                  </h2>
-                  <p className="mt-4 text-lg text-gray-300">
-                    The AI product utilizes advanced NLP algorithms to
-                    understand and interpret human language, enabling it to
-                    accurately process and analyze text-based inputs.
-                  </p>
-                  <div className="mt-6">
-                    <a
-                      className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                      href="/login"
-                    >
-                      Learn More
-                    </a>
-                  </div>
+                  {data.application &&
+                    data.feature.map((item) => (
+                      <>
+                        <h4 className="text-xl font-semibold mt-4">
+                          Application:
+                        </h4>
+                        <ul className="list-disc pl-8">
+                          <li> {item.text}</li>
+                        </ul>
+                      </>
+                    ))}
                 </div>
-              </div>
-            </div>
-            <div className="mt-12 sm:mt-16 lg:mt-0">
-              <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img
-                  loading="lazy"
-                  width="647"
-                  height="486"
-                  className="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                  style={{ color: "transparent" }}
-                  src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="relative">
-          <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
-            <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
-              <div>
+              </>
+            ) : (
+              <>
                 <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      className="h-8 w-8 text-white"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
-                      ></path>
-                    </svg>
-                  </span>
+                  <h3 className="text-2xl heading2 font-semibold mb-2">
+                    {data.title}
+                  </h3>
+                  <p className="">{data.description}</p>
+
+                  {data.feature &&
+                    data.feature.map((item) => (
+                      <>
+                        <h4 className="text-xl font-semibold mt-4">
+                          Features:
+                        </h4>
+                        <ul className="list-disc pl-8">
+                          <li> {item.text}</li>
+                        </ul>
+                      </>
+                    ))}
+
+                  {data.application &&
+                    data.feature.map((item) => (
+                      <>
+                        <h4 className="text-xl font-semibold mt-4">
+                          Application:
+                        </h4>
+                        <ul className="list-disc pl-8">
+                          <li> {item.text}</li>
+                        </ul>
+                      </>
+                    ))}
                 </div>
-                <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Sentiment Analysis:
-                  </h2>
-                  <p className="mt-4 text-lg text-gray-300">
-                    The product has built-in sentiment analysis capabilities,
-                    allowing it to determine the sentiment (positive, negative,
-                    or neutral) expressed in text or customer feedback.
-                  </p>
-                  <div className="mt-6">
-                    <a
-                      className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                      href="/login"
-                    >
-                      Learn More
-                    </a>
-                  </div>
+                <div className="flex items-center">
+                  <img
+                    src="/images/services/nlp.jpg"
+                    alt="Natural Language Processing"
+                    className="max-w-full rounded-lg shadow-md"
+                  />
                 </div>
-              </div>
-            </div>
-            <div className="mt-12 sm:mt-16 lg:mt-0">
-              <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img
-                  alt="Inbox user interface"
-                  loading="lazy"
-                  width="647"
-                  height="486"
-                  className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                  style={{ color: "transparent" }}
-                  src="https://images.unsplash.com/photo-1599134842279-fe807d23316e"
-                />
-              </div>
-            </div>
-          </div>
+              </>
+            )
+          )}
         </div>
-
-        <div className="relative">
-          <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
-            <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
-              <div>
-                <div>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      className="h-8 w-8 text-white"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
-                      ></path>
-                    </svg>
-                  </span>
-                </div>
-                <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-white">
-                    Natural Language Generation (NLG):
-                  </h2>
-                  <p className="mt-4 text-lg text-gray-300">
-                    The AI product can generate human-like written content,
-                    summaries, or reports based on structured data or analysis
-                    results.
-                  </p>
-                  <div className="mt-6">
-                    <a
-                      className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                      href="/login"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-12 sm:mt-16 lg:mt-0">
-              <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img
-                  loading="lazy"
-                  width="646"
-                  height="485"
-                  className="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                  style={{ color: "transparent" }}
-                  src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-gray-100 min-h-screen">
-        <div className="container mx-auto p-8">
-          <h1 className="text-4xl font-bold mb-4">Computer Vision Services</h1>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Feature 1: Object Detection */}
-            <div className="p-4 border rounded-lg shadow-lg bg-white">
-              <Image
-                src="/object-detection.jpg" // Replace with your image source
-                alt="Object Detection"
-                width={400}
-                height={300}
-                className="rounded-md"
-              />
-              <h2 className="text-2xl font-semibold mt-4 mb-2">
-                Object Detection
-              </h2>
-              <p className="text-gray-600">
-                Detect and locate objects in images or videos. This technology
-                is used in various applications like surveillance, autonomous
-                vehicles, and more.
-              </p>
-              <ul className="mt-2 list-disc list-inside">
-                <li>Accurate object identification</li>
-                <li>Real-time processing</li>
-                <li>Supports multiple object types</li>
-              </ul>
-            </div>
-
-            {/* Feature 2: Facial Recognition */}
-            <div className="p-4 border rounded-lg shadow-lg bg-white">
-              <Image
-                src="/facial-recognition.jpg" // Replace with your image source
-                alt="Facial Recognition"
-                width={400}
-                height={300}
-                className="rounded-md"
-              />
-              <h2 className="text-2xl font-semibold mt-4 mb-2">
-                Facial Recognition
-              </h2>
-              <p className="text-gray-600">
-                Identify and verify individuals based on facial features. This
-                technology is used for security, access control, and
-                personalized user experiences.
-              </p>
-              <ul className="mt-2 list-disc list-inside">
-                <li>High accuracy in facial matching</li>
-                <li>Enhanced security measures</li>
-                <li>Customizable recognition thresholds</li>
-              </ul>
-            </div>
-
-            {/* Feature 3: Text Recognition (OCR) */}
-            <div className="p-4 border rounded-lg shadow-lg bg-white">
-              <Image
-                src="/images/services/Facial-Recognition.jpg" // Replace with your image source
-                alt="Text Recognition (OCR)"
-                width={400}
-                height={300}
-                className="rounded-md"
-              />
-              <h2 className="text-2xl font-semibold mt-4 mb-2">
-                Text Recognition (OCR)
-              </h2>
-              <p className="text-gray-600">
-                Extract and recognize text from images or scanned documents. OCR
-                technology is used in data extraction, document processing, and
-                more.
-              </p>
-              <ul className="mt-2 list-disc list-inside">
-                <li>Accurate text extraction</li>
-                <li>Supports various languages</li>
-                <li>Integration with document management systems</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
+      <Features />
     </>
   );
 };

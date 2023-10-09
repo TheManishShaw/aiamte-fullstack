@@ -28,7 +28,6 @@ const ResourceCard = ({
   description,
   category,
 }: Props) => {
-  console.log("----------------------------", description);
   return (
     <Card className="w-full max-w-fit border-0 !bg-transparent sm:max-w-[356px]">
       <Link href={downloadLink}>
