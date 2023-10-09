@@ -182,7 +182,7 @@ const DocAi = () => {
           {/* Data Extraction */}
           <div className="flex items-center">
             <img
-              src="/images/services/Extract-Data.jpg"
+              src="/images/Web-Data-Extraction.jpg"
               alt="Data Extraction"
               className="max-w-full rounded-lg shadow-md"
             />
