@@ -140,7 +140,7 @@ const DocAi = () => {
             <h3 className="text-2xl font-semibold mb-2 heading2">
               Image Recognition
             </h3>
-            <p className="">
+            <p className="text-xl">
               Image recognition in Document AI involves the automatic extraction
               of text and data from images and scanned documents. It's commonly
               used for tasks like invoice processing and receipt extraction.
@@ -158,7 +158,7 @@ const DocAi = () => {
             <h3 className="text-2xl heading2 font-semibold mb-2">
               Natural Language Processing
             </h3>
-            <p className="">
+            <p className="text-xl">
               Natural Language Processing (NLP) in Document AI focuses on
               understanding and extracting information from unstructured text
               documents. It's used for tasks like sentiment analysis and
@@ -191,7 +191,7 @@ const DocAi = () => {
             <h3 className="text-2xl font-semibold mb-2 heading2">
               Data Extraction
             </h3>
-            <p className="">
+            <p className="text-xl">
               Data extraction services in Document AI focus on the automated
               extraction of structured data from documents. This can include
               tables, forms, and databases within documents.

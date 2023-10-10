@@ -24,11 +24,11 @@ const AboutSectionTwo = () => {
                     {item.icon}
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
+                  <h1 className="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
                     {item.title}
                   </h1>
 
-                  <p className="">{item.paragraph}</p>
+                  <p className=" text-xl">{item.paragraph}</p>
                 </div>
               ))}
             </div>

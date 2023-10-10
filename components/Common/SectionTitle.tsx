@@ -26,7 +26,7 @@ const SectionTitle = ({
           <span className="inline-block w-3 h-1 ml-1 bg-primary rounded-full"></span>
           <span className="inline-block w-1 h-1 ml-1 bg-primary rounded-full"></span>
         </div>
-        <p className="text-base !leading-relaxed text-body-color md:text-lg">
+        <p className="text-lg !leading-relaxed text-body-color md:text-xl">
           {paragraph}
         </p>
       </div>

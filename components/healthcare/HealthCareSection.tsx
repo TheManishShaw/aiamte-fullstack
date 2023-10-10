@@ -9,7 +9,7 @@ const HealthCareSection = () => {
           <h1 className="font-heading text-5xl xs:text-6xl md:text-7xl font-bold  mb-10">
             <span>Medical and Healthcare datasets for Machine Learning</span>
           </h1>
-          <p className="font-medium leading-relaxed text-body-color">
+          <p className="font-medium text-xl leading-relaxed text-body-color">
             {" "}
             Patients today have high expectations for technology to replace
             painful manual surgeries with painless ones, and AI in medicine has
@@ -36,10 +36,10 @@ const HealthCareSection = () => {
                     <p className="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">
                       {service.title}
                     </p>
-                    <p className="mt-6 text-lg  font-medium leading-relaxed text-body-color">
+                    <p className="mt-6 text-xl  font-medium leading-relaxed text-body-color">
                       {service.description}
                     </p>
-                    <dl className="mt-10 max-w-xl space-y-8 text-base font-medium leading-relaxed text-body-color lg:max-w-none">
+                    <dl className="mt-10 max-w-xl space-y-8 text-lg font-medium leading-relaxed text-body-color lg:max-w-none">
                       {service.features &&
                         service.features.map((feature) => (
                           <div
@@ -80,7 +80,7 @@ const HealthCareSection = () => {
                         <h3 className="mb-2 text-xl font-bold dark:text-white">
                           {keyFeature.name}
                         </h3>
-                        <p className="text-gray-500 dark:text-gray-400 group-hover:text-gray-400">
+                        <p className="text-gray-500 text-lg dark:text-gray-400 group-hover:text-gray-400">
                           {keyFeature.description}
                         </p>
                       </div>

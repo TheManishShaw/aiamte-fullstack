@@ -9,7 +9,7 @@ const SpeechAudio = () => {
         pageName="Speech Audio"
         description="These datasets encompass diverse languages, accents, and acoustic environments, enabling the development of more inclusive and accurate voice technologies."
       />
-      <div className="relative max-w-screen-xl p-4 px-4 mx-auto bg-white rounded-2xl dark:bg-gray-800 sm:px-6 lg:px-8 py-26 lg:mt-20">
+      <div className="relative max-w-screen-xl p-4 px-4 mx-auto bg-gray-100 rounded-2xl dark:bg-secondary sm:px-6 lg:px-8 py-26 lg:mt-20">
         <div className="relative">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="ml-auto lg:col-start-2 lg:max-w-2xl">
@@ -19,14 +19,14 @@ const SpeechAudio = () => {
               <h4 className="mt-2 text-2xl font-extrabold leading-8 text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
                 Audio / Speech / Voice Datasets
               </h4>
-              <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+              <p className="mt-4 text-xl leading-6 text-gray-500 dark:text-gray-300">
                 We generate tangible information for you together with expertly
                 done transcription and extraction by a team of experts in
                 qualitative development, training, and developing conversational
                 AI. Whether it can be single or multiple speakers, spontaneous
                 or utterances, or scripted conversations.
               </p>
-              <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+              <p className="mt-4 text-xl leading-6 text-gray-500 dark:text-gray-300">
                 The higher quality services of our organization focused on
                 classifying and identifying appropriate names in the text with
                 NER. Additionally, Fineax AI only prefers native speakers
@@ -75,7 +75,7 @@ const SpeechAudio = () => {
               <h1 className="font-heading text-5xl xs:text-6xl md:text-7xl font-bold  mb-10">
                 <span>{data.title}</span>
               </h1>
-              <p className="text-body-color font-medium leading-relaxed">
+              <p className="text-body-color text-xl font-medium leading-relaxed">
                 {data.description}
               </p>
             </div>
@@ -92,10 +92,10 @@ const SpeechAudio = () => {
                           />
                         </div>
                         <div>
-                          <h3 className="text-xl font-semibold">
+                          <h3 className="text-2xl font-semibold">
                             {item.title}
                           </h3>
-                          <span className="text-sm text-gray-400">
+                          <span className="text-xl text-gray-400">
                             {item.description}
                           </span>
                         </div>
@@ -118,10 +118,10 @@ const SpeechAudio = () => {
                           <img src="" alt="" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-semibold">
+                          <h3 className="text-2xl font-semibold">
                             {item.title}
                           </h3>
-                          <span className="text-sm text-gray-400">
+                          <span className="text-lg text-gray-400">
                             {item.description}
                           </span>
                         </div>

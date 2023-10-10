@@ -155,7 +155,7 @@ const ComputerVision = () => {
 
       <section className="container mx-auto text-base font-medium leading-relaxed text-body-color  p-8 bg-transparent  rounded-lg">
         <div className="mx-auto m-12 flex max-w-[75rem] flex-col items-center space-y-4 text-center">
-          <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl text-black-100">
+          <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl text-black dark:text-white">
             Unlocking the Power of Visual <br /> Data
           </h2>
 
@@ -186,14 +186,14 @@ const ComputerVision = () => {
                   <h3 className="text-2xl font-semibold mb-2 heading2">
                     {data.title}
                   </h3>
-                  <p className="">{data.description}</p>
+                  <p className="text-xl">{data.description}</p>
                   {data.feature &&
                     data.feature.map((item) => (
                       <>
                         <h4 className="text-xl font-semibold mt-4">
                           Features:
                         </h4>
-                        <ul className="list-disc pl-8">
+                        <ul className="list-disc text-lg pl-8">
                           <li> {item.text}</li>
                         </ul>
                       </>
@@ -205,7 +205,7 @@ const ComputerVision = () => {
                         <h4 className="text-xl font-semibold mt-4">
                           Application:
                         </h4>
-                        <ul className="list-disc pl-8">
+                        <ul className="list-disc text-lg pl-8">
                           <li> {item.text}</li>
                         </ul>
                       </>
@@ -218,7 +218,7 @@ const ComputerVision = () => {
                   <h3 className="text-2xl heading2 font-semibold mb-2">
                     {data.title}
                   </h3>
-                  <p className="">{data.description}</p>
+                  <p className="text-xl">{data.description}</p>
 
                   {data.feature &&
                     data.feature.map((item) => (
@@ -226,7 +226,7 @@ const ComputerVision = () => {
                         <h4 className="text-xl font-semibold mt-4">
                           Features:
                         </h4>
-                        <ul className="list-disc pl-8">
+                        <ul className="list-disc text-lg pl-8">
                           <li> {item.text}</li>
                         </ul>
                       </>
@@ -238,7 +238,7 @@ const ComputerVision = () => {
                         <h4 className="text-xl font-semibold mt-4">
                           Application:
                         </h4>
-                        <ul className="list-disc pl-8">
+                        <ul className="list-disc text-lg pl-8">
                           <li> {item.text}</li>
                         </ul>
                       </>

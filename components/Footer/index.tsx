@@ -28,7 +28,7 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
+                <p className="mb-9 text-xl font-medium leading-relaxed text-body-color">
                   Aimate offers an all-encompassing solution to artificial
                   intelligence and machine learning challenges.
                 </p>
@@ -102,7 +102,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/blogs"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Blog{" "}
@@ -111,7 +111,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/service"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Services{" "}
@@ -120,7 +120,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/about"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       About{" "}
@@ -139,7 +139,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/terms-of-use"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Terms of use{" "}
@@ -148,7 +148,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/privacy-policy"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
                     >
                       Privacy Policy{" "}
                     </Link>
@@ -166,7 +166,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/terms-of-use"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
                     >
                       Terms of Use{" "}
                     </Link>
@@ -174,7 +174,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/about"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       About{" "}
@@ -187,7 +187,7 @@ const Footer = () => {
         </div>
         <div className="bg-primary/10 py-4">
           <div className="container">
-            <p className="text-center text-base text-body-color dark:text-white">
+            <p className="text-center text-md text-body-color dark:text-white">
               © 2023 Aimate. All rights reserved. Developed by
               <a
                 className="pl-1 hover:text-primary"

@@ -40,10 +40,10 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           />
         </div>
         <div className="my-6">
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
             {title}
           </h3>
-          <p className="mt-5 text-base line-clamp-3 font-medium leading-relaxed text-body-color">
+          <p className="mt-5 text-xl line-clamp-3 font-medium leading-relaxed text-body-color">
             {paragraph}
           </p>
         </div>

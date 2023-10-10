@@ -110,7 +110,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            className={`flex py-2 text-lg font-medium text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
                             {menuItem.title}
                           </Link>
@@ -118,7 +118,7 @@ const Header = () => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
+                              className="flex cursor-pointer items-center justify-between font-medium py-2 text-lg text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -142,7 +142,7 @@ const Header = () => {
                                       submenuItem?.path ? submenuItem?.path : ""
                                     }
                                     key={submenuItem.id}
-                                    className="block rounded py-2.5 text-sm text-dark hover:opacity-70 dark:text-white lg:px-3"
+                                    className="block rounded py-2.5 text-lg font-medium text-dark hover:opacity-70 dark:text-white lg:px-3"
                                   >
                                     {submenuItem.title}
                                   </Link>
