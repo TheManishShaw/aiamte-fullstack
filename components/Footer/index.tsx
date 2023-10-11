@@ -189,13 +189,14 @@ const Footer = () => {
           <div className="container">
             <p className="text-center text-md text-body-color dark:text-white">
               © 2023 Aimate. All rights reserved. Developed by
-              <a
+              <Link
                 className="pl-1 hover:text-primary"
                 href="https://manishshaw.in"
                 rel="nofollow noopener"
+                target="_blank"
               >
                 Manish Shaw
-              </a>
+              </Link>
             </p>
           </div>
         </div>
