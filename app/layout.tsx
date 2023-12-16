@@ -22,7 +22,7 @@ export default function RootLayout({
     */}
       <head />
 
-      <body className="dark:bg-slate-950 bg-slate-800">
+      <body className="dark:bg-slate-950 bg-slate-950">
         <Providers>
           <Header />
           {children}
