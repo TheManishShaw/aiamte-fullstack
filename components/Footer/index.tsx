@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-primary/70 bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
+        className="wow fadeInUp relative z-10 bg-primary/70 bg-opacity-5 pt-16 md:pt-20 lg:pt-14"
         data-wow-delay=".1s"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-grow flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[350px] lg:mb-16">
+          <div className="-mx-4 md:flex block gap-4 ">
+            <div className="w-full max-w-md ">
+              <div className="mb-12 lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
                     src="/images/logo/logo-2.png"
@@ -92,95 +92,139 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/blogs"
-                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Blog{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/service"
-                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Services{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      About{" "}
-                    </Link>
-                  </li>
-                </ul>
+            <div className="grid md:grid-cols-4 grid-cols-2 items-center justify-center  gap-3 w-full">
+              <div className="w-full   ">
+                <div className="mb-12 lg:mb-16">
+                  <h2 className="mb-6 text-xl font-bold text-black dark:text-white">
+                    Specialty
+                  </h2>
+                  <ul>
+                    <li>
+                      <Link
+                        href="/service/computer-vision"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Computer Vision
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/service/speech-audio"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Conversational AI
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/service/document-ai"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Document AI
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/terms-of-use"
-                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Terms of use{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/privacy-policy"
-                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
-                    >
-                      Privacy Policy{" "}
-                    </Link>
-                  </li>
-                </ul>
+              <div className="w-full   ">
+                <div className="mb-12 lg:mb-16">
+                  <h2 className="mb-6 text-xl font-bold text-black dark:text-white">
+                    Company
+                  </h2>
+                  <ul>
+                    <li>
+                      <Link
+                        href="/about"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/blog"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Blog
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/contact"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/terms-of-use"
-                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
-                    >
-                      Terms of Use{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <a
-                      href="/about"
-                      className="mb-4 inline-block text-lg font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      About{" "}
-                    </a>
-                  </li>
-                </ul>
+              <div className="w-full   ">
+                <div className="mb-12 lg:mb-16">
+                  <h2 className="mb-6 text-xl font-bold text-black dark:text-white">
+                    Resources
+                  </h2>
+                  <ul>
+                    <li>
+                      <Link
+                        href="#"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Media
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Case Study
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Sample Datasets
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="w-full max-w-[250px]   ">
+                <div className="mb-12 lg:mb-16">
+                  <h2 className="mb-6 text-xl font-bold text-black dark:text-white">
+                    Contact Us
+                  </h2>
+                  <ul>
+                    <li>
+                      <Link
+                        href="mailto:info@aimate.in"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        info@aimate.in
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="mailto:support@aimate.in"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        support@aimate.in
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="#"
+                        className="mb-4 inline-block text-lg font-medium text-body-color hover:text-white/90"
+                      >
+                        Vendor Enrollment Form
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

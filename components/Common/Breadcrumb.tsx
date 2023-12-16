@@ -18,9 +18,9 @@ const Breadcrumb = ({
                   {pageName}
                 </h1>
                 <div className="mb-5">
-                  <span className="inline-block w-40 h-1 bg-primary rounded-full"></span>
-                  <span className="inline-block w-3 h-1 ml-1 bg-primary rounded-full"></span>
-                  <span className="inline-block w-1 h-1 ml-1 bg-primary rounded-full"></span>
+                  <span className="inline-block w-40 h-1 bg-white rounded-full"></span>
+                  <span className="inline-block w-3 h-1 ml-1 bg-white rounded-full"></span>
+                  <span className="inline-block w-1 h-1 ml-1 bg-white rounded-full"></span>
                 </div>
                 <p className="text-xl font-medium leading-relaxed text-body-color">
                   {description}

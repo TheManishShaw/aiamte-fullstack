@@ -11,9 +11,9 @@ const AboutSectionTwo = () => {
           </h1>
 
           <div className="mt-2">
-            <span className="inline-block w-40 h-1 bg-primary rounded-full"></span>
-            <span className="inline-block w-3 h-1 ml-1 bg-primary rounded-full"></span>
-            <span className="inline-block w-1 h-1 ml-1 bg-primary rounded-full"></span>
+            <span className="inline-block w-40 h-1 bg-white rounded-full"></span>
+            <span className="inline-block w-3 h-1 ml-1 bg-white rounded-full"></span>
+            <span className="inline-block w-1 h-1 ml-1 bg-white rounded-full"></span>
           </div>
 
           <div className="mt-8 xl:mt-12 lg:flex lg:items-center text-base !leading-relaxed text-body-color">

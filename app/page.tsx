@@ -18,7 +18,9 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
-      {/* <Hero /> */}
+      <div className="overflow-hidden">
+        <Hero />
+      </div>
       <Features />
       <Video />
       {/* <Brands /> */}
