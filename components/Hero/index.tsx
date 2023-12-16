@@ -15,7 +15,7 @@ const slides = [
 
 const Hero = () => {
   const [active, setActive] = useState(0);
-  const [autoplay, setAutoplay] = useState(0);
+  const [autoplay, setAutoplay] = useState(false);
   const max = slides.length;
 
   const intervalBetweenSlides = () =>
