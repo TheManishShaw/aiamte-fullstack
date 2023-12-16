@@ -32,7 +32,7 @@ const NewsLatterBox = () => {
   };
   return (
     <div
-      className="wow fadeInUp relative z-10 rounded-md bg-primary/[3%] p-8 dark:bg-primary/10 sm:p-11 lg:p-8 xl:p-11"
+      className="wow fadeInUp relative z-10 rounded-md bg-primary/70 p-8 dark:bg-primary/50 sm:p-11 lg:p-8 xl:p-11"
       data-wow-delay=".2s"
     >
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
@@ -47,7 +47,7 @@ const NewsLatterBox = () => {
           type="text"
           {...register("fullName", { required: true })}
           placeholder="Enter your name"
-          className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#c96060b5] focus:dark:border-opacity-50"
+          className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#fff] focus:dark:border-opacity-50"
         />
         {errors.fullName && (
           <span className="text-red-500">This field is required</span>
@@ -56,7 +56,7 @@ const NewsLatterBox = () => {
           type="email"
           {...register("email", { required: true })}
           placeholder="Enter your email"
-          className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#c96060b5] focus:dark:border-opacity-50"
+          className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#fff] focus:dark:border-opacity-50"
         />
         {errors.email && (
           <span className="text-red-500">This field is required</span>

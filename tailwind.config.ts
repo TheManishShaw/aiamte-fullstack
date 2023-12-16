@@ -52,9 +52,9 @@ module.exports = {
         violet: "#F16565",
         orange: "#FF964B",
 
-        dark: "#171717",
-        primary: "#C21F1E",
-        secondary: "#171717",
+        dark: "#1e293b        ",
+        primary: "#0f172a",
+        secondary: "#0f172a",
         yellow: "#FBB040",
         "body-color": "#959CB1",
 

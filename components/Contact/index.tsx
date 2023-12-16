@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="wow fadeInUp mb-12 rounded-md bg-primary py-11 px-8 dark:bg-primary/60 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
               "
             >
@@ -62,7 +62,7 @@ const Contact = () => {
                         type="text"
                         {...register("fullName", { required: true })}
                         placeholder="Enter your name"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#c96060b5] dark:shadow-signUp"
+                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#fff] dark:shadow-signUp"
                       />
                       {errors.fullName && (
                         <span className="text-red-500">
@@ -83,7 +83,7 @@ const Contact = () => {
                         type="email"
                         {...register("email", { required: true })}
                         placeholder="Enter your email"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#c96060b5] dark:shadow-signUp"
+                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#fff] dark:shadow-signUp"
                       />
                       {errors.email && (
                         <span className="text-red-500">
@@ -104,7 +104,7 @@ const Contact = () => {
                         rows={5}
                         {...register("message", { required: true })}
                         placeholder="Enter your Message"
-                        className=" resize-none w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#c96060b5] dark:shadow-signUp"
+                        className=" resize-none w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#fff] dark:shadow-signUp"
                       ></textarea>
                       {errors.message && (
                         <span className="text-red-500">

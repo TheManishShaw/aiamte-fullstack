@@ -5,27 +5,27 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
+        className="wow fadeInUp relative z-10 bg-primary/70 bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
         data-wow-delay=".1s"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 flex flex-grow flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
+              <div className="mb-12 max-w-[350px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
                     src="/images/logo/logo-2.png"
                     alt="logo"
                     className="w-full dark:hidden"
-                    width={140}
+                    width={250}
                     height={30}
                   />
                   <Image
                     src="/images/logo/logo.png"
                     alt="logo"
                     className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
+                    width={250}
+                    height={50}
                   />
                 </Link>
                 <p className="mb-9 text-xl font-medium leading-relaxed text-body-color">
@@ -36,7 +36,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#C21F1E] hover:text-primary"
+                    className="mr-6 text-[#OF172A] hover:text-primary"
                   >
                     <svg
                       width="9"
@@ -50,7 +50,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#C21F1E] hover:text-primary"
+                    className="mr-6 text-[#OF172A] hover:text-primary"
                   >
                     <svg
                       width="19"
@@ -64,7 +64,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#C21F1E] hover:text-primary"
+                    className="mr-6 text-[#OF172A] hover:text-primary"
                   >
                     <svg
                       width="18"
@@ -78,7 +78,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#C21F1E] hover:text-primary"
+                    className="mr-6 text-[#OF172A] hover:text-primary"
                   >
                     <svg
                       width="17"
@@ -185,18 +185,18 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary/10 py-4">
+        <div className="bg-primary py-4">
           <div className="container">
             <p className="text-center text-md text-body-color dark:text-white">
-              © 2023 Aimate. All rights reserved. Developed by
-              <Link
+              © 2023 Aimate. All rights reserved.
+              {/* <Link
                 className="pl-1 hover:text-primary"
                 href="https://manishshaw.in"
                 rel="nofollow noopener"
                 target="_blank"
               >
                 Manish Shaw
-              </Link>
+              </Link> */}
             </p>
           </div>
         </div>
@@ -208,7 +208,7 @@ const Footer = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#C21F1E" />
+            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#OF172A" />
             <mask
               id="mask0_94:899"
               style={{ maskType: "alpha" }}
@@ -223,7 +223,7 @@ const Footer = () => {
                 cx="49.5"
                 cy="49.5"
                 r="49.5"
-                fill="#C21F1E"
+                fill="#OF172A"
               />
             </mask>
             <g mask="url(#mask0_94:899)">
@@ -329,8 +329,8 @@ const Footer = () => {
                 y2="59.8878"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#C21F1E" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#C21F1E" stopOpacity="0" />
+                <stop stopColor="#OF172A" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#OF172A" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_94:889"
@@ -340,8 +340,8 @@ const Footer = () => {
                 y2="20.668"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#C21F1E" stopOpacity="0" />
-                <stop offset="1" stopColor="#C21F1E" stopOpacity="0.51" />
+                <stop stopColor="#OF172A" stopOpacity="0" />
+                <stop offset="1" stopColor="#OF172A" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_94:889"
@@ -351,8 +351,8 @@ const Footer = () => {
                 y2="25.1062"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#C21F1E" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#C21F1E" stopOpacity="0" />
+                <stop stopColor="#OF172A" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#OF172A" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint3_linear_94:889"
@@ -362,8 +362,8 @@ const Footer = () => {
                 y2="80.6826"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#C21F1E" stopOpacity="0" />
-                <stop offset="1" stopColor="#C21F1E" stopOpacity="0.51" />
+                <stop stopColor="#OF172A" stopOpacity="0" />
+                <stop offset="1" stopColor="#OF172A" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_94:889"
@@ -373,8 +373,8 @@ const Footer = () => {
                 y2="58.2156"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#C21F1E" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#C21F1E" stopOpacity="0" />
+                <stop stopColor="#OF172A" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#OF172A" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint5_linear_94:889"
@@ -384,8 +384,8 @@ const Footer = () => {
                 y2="41.6598"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#C21F1E" stopOpacity="0" />
-                <stop offset="1" stopColor="#C21F1E" stopOpacity="0.51" />
+                <stop stopColor="#OF172A" stopOpacity="0" />
+                <stop offset="1" stopColor="#OF172A" stopOpacity="0.51" />
               </linearGradient>
             </defs>
           </svg>
