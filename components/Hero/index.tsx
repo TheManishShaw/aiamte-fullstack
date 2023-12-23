@@ -2,15 +2,15 @@
 import React, { useEffect, useState } from "react";
 
 const slides = [
-  // {
-  //   eachSlide: "url(/images/video/slide.gif)",
-  // },
+  {
+    eachSlide: "url(/images/video/slide.gif)",
+  },
   {
     eachSlide: "url(/images/video/slide-1.gif)",
   },
-  // {
-  //   eachSlide: "url(/images/video/slide-2.gif)",
-  // },
+  {
+    eachSlide: "url(/images/video/slide-2.gif)",
+  },
 ];
 
 const Hero = () => {
@@ -113,7 +113,7 @@ const Hero = () => {
         {renderSlides()}
       </div>
       <div className=" absolute top-[50vh] left-20">
-        <h2 className="text-6xl font-extrabold">
+        <h2 className="text-5xl font-extrabold">
           Elevate Your AI Performance. <br />
           Exceptional Data Yields Superior Outcomes.
         </h2>
