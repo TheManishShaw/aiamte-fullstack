@@ -9,7 +9,13 @@ const slides = [
     eachSlide: "url(/images/video/slider-2.gif)",
   },
 ];
-
+interface SliderStyles {
+  width: string;
+  transform: string;
+  position: "relative"; // Specify the correct type for the 'position' property
+  transition: string;
+  display: string;
+}
 const Hero = () => {
   const [active, setActive] = useState(0);
   const [autoplay, setAutoplay] = useState(false);
@@ -34,15 +40,15 @@ const Hero = () => {
 
   const isActive = (value: any) => active === value && "active";
 
-  const setSliderStyles = () => {
+  const setSliderStyles = (): SliderStyles => {
     const transition = active * -100;
 
     return {
       width: slides.length * 100 + "vw",
       transform: "translateX(" + transition + "vw)",
       position: "relative",
-      transition: "transform 0.5s ease-in-out", // Add this line
-      display: "flex", // Add this line
+      transition: "transform 0.5s ease-in-out",
+      display: "flex",
     };
   };
   const renderSlides = () =>
