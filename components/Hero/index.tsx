@@ -3,13 +3,10 @@ import React, { useEffect, useState } from "react";
 
 const slides = [
   {
-    eachSlide: "url(/images/video/slide.gif)",
+    eachSlide: "url(/images/video/slider.gif)",
   },
   {
-    eachSlide: "url(/images/video/slide-1.gif)",
-  },
-  {
-    eachSlide: "url(/images/video/slide-2.gif)",
+    eachSlide: "url(/images/video/slider-2.gif)",
   },
 ];
 
@@ -43,32 +40,30 @@ const Hero = () => {
     return {
       width: slides.length * 100 + "vw",
       transform: "translateX(" + transition + "vw)",
+      position: "relative",
+      transition: "transform 0.5s ease-in-out", // Add this line
+      display: "flex", // Add this line
     };
   };
-
   const renderSlides = () =>
     slides.map((item, index) => (
       <div
         className="each-slide"
         key={index}
         style={{ backgroundImage: item.eachSlide }}
-      ></div>
+      >
+        <div className="overlay"></div>
+      </div>
     ));
 
   const renderDots = () =>
-    slides.map(
-      (
-        silde,
-        index // check index
-      ) => (
-        <li className={isActive(index) + " dots"} key={index}>
-          <button onClick={() => setActive(index)}>
-            <span>&#9679;</span>
-          </button>
-        </li>
-      )
-    );
-
+    slides.map((slide, index) => (
+      <li className={isActive(index) + " dots"} key={index}>
+        <button className="z-20" onClick={() => setActive(index)}>
+          <span>&#9679;</span>
+        </button>
+      </li>
+    ));
   const renderPlayStop = () =>
     autoplay ? (
       <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24">
@@ -108,11 +103,14 @@ const Hero = () => {
   );
 
   return (
-    <section className="slider ">
-      <div className="wrapper" style={setSliderStyles()}>
+    <section className="slider">
+      <div
+        className="wrapper bg-blend-overlay bg-black z-20"
+        style={setSliderStyles()}
+      >
         {renderSlides()}
       </div>
-      <div className=" absolute top-[50vh] left-20">
+      <div className="absolute top-[50vh] left-20 text-white z-30">
         <h2 className="text-5xl font-extrabold">
           Elevate Your AI Performance. <br />
           Exceptional Data Yields Superior Outcomes.
