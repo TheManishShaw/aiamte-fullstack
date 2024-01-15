@@ -5,8 +5,8 @@ const HealthCareSection = () => {
   return (
     <>
       <section className="">
-        <div className="max-w-6xl mx-auto text-center mb-16">
-          <h1 className="font-heading text-5xl xs:text-6xl md:text-7xl font-bold  mb-10">
+        <div className="max-w-7xl mx-auto text-center mb-16">
+          <h1 className="font-heading text-5xl xs:text-6xl md:text-4xl font-bold  mb-10">
             <span>Medical and Healthcare datasets for Machine Learning</span>
           </h1>
           <p className="font-medium text-xl leading-relaxed text-body-color">
