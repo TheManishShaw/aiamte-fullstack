@@ -3,9 +3,9 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import Autoplay from "embla-carousel-autoplay";
-import imageByIndex from "./imageByIndex";
+import imageByIndex from "./ImageByIndex";
 
-const EmblaCarousel = (props) => {
+const EmblaCarousel = (props: any) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
@@ -13,7 +13,7 @@ const EmblaCarousel = (props) => {
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    const animations = slides.map((_, index) => ({
+    const animations = slides.map((_: any, index: any) => ({
       text: "add different text with a typing effect to each slide in your EmblaCarousel component, you can use a combination of React state, useEffect, and CSS for styling.",
       index,
       typingTimeout: null,
@@ -21,7 +21,7 @@ const EmblaCarousel = (props) => {
     setTextAnimations(animations);
   }, [slides]);
 
-  const startTypingEffect = (index) => {
+  const startTypingEffect = (index: any) => {
     const { text } = textAnimations[index];
     const newText =
       "add different text with a typing effect to each slide in your EmblaCarousel component, you can use a combination of React state, useEffect, and CSS for styling."; // Replace with your desired text
@@ -50,7 +50,7 @@ const EmblaCarousel = (props) => {
     });
   };
 
-  const stopTypingEffect = (index) => {
+  const stopTypingEffect = (index: any) => {
     clearInterval(textAnimations[index].typingTimeout);
     setIsTyping(false);
   };
@@ -93,9 +93,24 @@ const EmblaCarousel = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {slides.map((index: any) => (
             <div className="embla__slide" key={index}>
-              <div style={overlayStyles}>
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  background: "rgba(0, 0, 0, 0.5)", // Adjust the overlay color and opacity
+                  zIndex: 1,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  color: "#fff", // Text color on the overlay
+                  fontSize: "1.5rem",
+                }}
+              >
                 <div className="embla__slide__number">
                   <span>{index + 1}</span>
                 </div>
