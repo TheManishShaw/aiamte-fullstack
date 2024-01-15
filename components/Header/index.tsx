@@ -43,7 +43,7 @@ const Header = () => {
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${
           sticky
-            ? "!fixed !z-[9999] !bg-white !bg-opacity-90 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
+            ? "!fixed !z-[9999] !bg-white !bg-opacity-90 shadow-sticky backdrop-blur-sm !transition dark:!bg-gray-950 dark:!bg-opacity-100"
             : "absolute"
         }`}
       >
@@ -156,7 +156,7 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <button className="rounded-lg  bg-primary px-6 py-3 font-semibold capitalize text-white hover:bg-primary/80">
+                <button className="rounded-lg  shadow-lg bg-primary px-6 py-3 font-semibold capitalize text-white hover:bg-primary/80">
                   OTS Datasets
                 </button>
                 <div>{/* <ThemeToggler /> */}</div>

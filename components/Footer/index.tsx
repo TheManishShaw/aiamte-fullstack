@@ -36,7 +36,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#OF172A] hover:text-primary"
+                    className="mr-6 text-[#OF172A] "
                   >
                     <svg
                       width="9"
@@ -50,7 +50,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#OF172A] hover:text-primary"
+                    className="mr-6 text-[#OF172A] "
                   >
                     <svg
                       width="19"
@@ -64,7 +64,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#OF172A] hover:text-primary"
+                    className="mr-6 text-[#OF172A] "
                   >
                     <svg
                       width="18"
@@ -76,9 +76,10 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/aimateindia"
                     aria-label="social-link"
-                    className="mr-6 text-[#OF172A] hover:text-primary"
+                    target="_blank"
+                    className="mr-6 text-[#OF172A] "
                   >
                     <svg
                       width="17"

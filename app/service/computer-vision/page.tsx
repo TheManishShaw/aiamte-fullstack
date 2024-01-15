@@ -59,20 +59,7 @@ const dataList = [
     application:
       "Medical image analysis, autonomous drones, and background removal in photography.",
   },
-  {
-    id: 5,
-    title: " Optical Character Recognition (OCR)",
-    description:
-      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
-    image: "/images/services/image-reco.jpg",
-    feature: [
-      {
-        text: "OCR extracts text from images or scanned documents, making printed or handwritten text accessible for digital processing.",
-      },
-    ],
-    application:
-      "Digitizing printed documents, assisting visually impaired individuals, and automating data entry.",
-  },
+
   {
     id: 6,
     title: "Gesture Recognition",
@@ -155,8 +142,8 @@ const ComputerVision = () => {
 
       <section className="container mx-auto text-base font-medium leading-relaxed text-body-color  p-8 bg-transparent  rounded-lg">
         <div className="mx-auto m-12 flex max-w-[75rem] flex-col items-center space-y-4 text-center">
-          <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl text-black dark:text-white">
-            Unlocking the Power of Visual <br /> Data
+          <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-4xl text-black dark:text-white">
+            Unlocking the Power of Visual Data
           </h2>
 
           <p className="max-w-[100%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">

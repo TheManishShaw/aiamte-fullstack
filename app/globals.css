@@ -34,7 +34,7 @@
   }
 
   .heading2 {
-    @apply font-bold text-[48px] leading-[50.4px] text-black dark:text-white;
+    @apply font-bold text-[32px] leading-[50.4px] text-black dark:text-white;
   }
 
   .heading3 {

@@ -13,7 +13,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     url: "/service/document-ai",
-    image: "/images/services/doc.gif",
+    image: "/images/services/doc.jpg",
     title: "Document AI",
     paragraph:
       "Building and localizing AI-enabled speech models offer numerous advantages for businesses and organizations. These models enhance accuracy, usability, and the overall customer experience. If you are seeking to enhance how your users engage with your technology, it is worth considering the development and localization of AI-enabled speech models.",
@@ -30,7 +30,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     url: "/service/computer-vision",
-    image: "/images/services/ComputerVision.gif",
+    image: "/images/services/Computervision1.jpg",
     title: "Computer Vision",
     paragraph:
       "Computer vision is a field within the realm of Artificial Intelligence that aims to teach machines the ability to perceive, comprehend, and interpret the visual world in a manner similar to humans. It plays a crucial role in the development of machine learning models, enabling them to effectively analyze, recognize, and categorize objects within images or videos on a significantly larger scale and at an accelerated pace.",
@@ -47,7 +47,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     url: "/service/speech-audio",
-    image: "/images/services/conversational.gif",
+    image: "/images/services/conversational1.jpg",
     title: "Conversational AI",
     paragraph:
       "Building and localizing AI-enabled speech models offer numerous advantages for businesses and organizations. These models enhance accuracy, usability, and the overall customer experience. If you are seeking to enhance how your users engage with your technology, it is worth considering the development and localization of AI-enabled speech models.",
@@ -64,7 +64,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     url: "/service/health-care",
-    image: "/images/services/Healthcare.gif",
+    image: "/images/services/Healthcare1.png",
     title: "Healthcare AI",
     paragraph:
       "If you need assistance with digitizing, sourcing, classifying, and de-identifying your healthcare datasets, please don't hesitate to contact us. Our services can help enhance the efficiency and accuracy of your data processing while contributing to the advancement of healthcare AI.",
