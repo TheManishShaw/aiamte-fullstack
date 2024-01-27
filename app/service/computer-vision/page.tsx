@@ -8,7 +8,7 @@ const dataList = [
     title: "Object Detection",
     description:
       " Identifies and locates objects within an image or video stream, often used in applications like surveillance, autonomous vehicles, and image tagging.",
-    image: "/images/services/image-reco.jpg",
+    image: "/images/services/computer_vision/Object_Ditection.jpg",
     feature: [
       {
         text: "Object detection enables computers to identify and locate multiple objects within an image or video frame",
@@ -22,7 +22,7 @@ const dataList = [
     title: "Image Classification",
     description:
       " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
-    image: "/images/services/image-reco.jpg",
+    image: "/images/services/computer_vision/Image_Clasification.webp",
     feature: [
       {
         text: "This type of computer vision AI categorizes images into predefined classes or labels, allowing machines to recognize and classify objects.",
@@ -36,7 +36,7 @@ const dataList = [
     title: "Facial Recognition",
     description:
       " Recognizes and verifies individuals by analyzing unique facial features, commonly used in security systems and biometric authentication.",
-    image: "/images/services/image-reco.jpg",
+    image: "/images/services/computer_vision/Facial_Recogination.png",
     feature: [
       {
         text: "Facial recognition identifies and verifies individuals by analyzing unique facial features, such as the arrangement of eyes, nose, and mouth.",
@@ -45,27 +45,13 @@ const dataList = [
     application:
       "Security access control, unlocking smartphones, and tracking attendance.",
   },
-  {
-    id: 4,
-    title: " Image Segmentation",
-    description:
-      " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
-    image: "/images/services/image-reco.jpg",
-    feature: [
-      {
-        text: " Image segmentation divides an image into distinct regions, making it possible to identify and analyze specific objects or areas within an image.",
-      },
-    ],
-    application:
-      "Medical image analysis, autonomous drones, and background removal in photography.",
-  },
 
   {
-    id: 6,
+    id: 4,
     title: "Gesture Recognition",
     description:
       " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
-    image: "/images/services/image-reco.jpg",
+    image: "/images/services/computer_vision/Gesture_recogination.png",
     feature: [
       {
         text: "Gesture recognition interprets hand movements or body gestures, allowing human-computer interaction through gestures.",
@@ -75,11 +61,11 @@ const dataList = [
       "Virtual reality (VR) and augmented reality (AR) interfaces, gaming, and sign language interpretation.",
   },
   {
-    id: 7,
+    id: 5,
     title: "Scene Understanding",
     description:
       " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
-    image: "/images/services/image-reco.jpg",
+    image: "/images/services/computer_vision/Scene_understanding.jpg",
     feature: [
       {
         text: "Scene understanding goes beyond object detection to comprehend the context and relationships between objects within a scene.",
@@ -89,11 +75,11 @@ const dataList = [
       "Robotics navigation, autonomous drones, and augmented reality gaming.",
   },
   {
-    id: 8,
+    id: 6,
     title: "Anomaly Detection",
     description:
       " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
-    image: "/images/services/image-reco.jpg",
+    image: "/images/services/computer_vision/Anomly_Detection.png",
     feature: [
       {
         text: " Anomaly detection identifies rare or unexpected patterns or events within a dataset, which can be crucial for fraud detection or quality control.",
@@ -103,11 +89,11 @@ const dataList = [
       " Intrusion detection in cybersecurity, manufacturing quality control, and predictive maintenance.",
   },
   {
-    id: 9,
+    id: 7,
     title: " Emotion Recognition",
     description:
       " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
-    image: "/images/services/image-reco.jpg",
+    image: "/images/services/computer_vision/Emotion_Recogination.jpg",
     feature: [
       {
         text: "Emotion recognition assesses the emotional state of individuals by analyzing facial expressions, voice, or physiological signals.",
@@ -117,11 +103,11 @@ const dataList = [
       "Mental health monitoring, customer sentiment analysis, and human-computer emotional interaction.",
   },
   {
-    id: 10,
+    id: 8,
     title: "Video Analysis",
     description:
       " Assigns predefined labels or categories to images, making it possible for machines to recognize and classify objects or scenes.",
-    image: "/images/services/image-reco.jpg",
+    image: "/images/services/computer_vision/Video_Analysis.jpg",
     feature: [
       {
         text: "Video analysis involves the continuous processing of video streams, allowing for real-time monitoring and decision-making.",
@@ -165,7 +151,7 @@ const ComputerVision = () => {
                 <div className="flex items-center">
                   <img
                     src={data.image}
-                    alt="Image Recognition"
+                    alt={data.title}
                     className="max-w-full rounded-lg shadow-md"
                   />
                 </div>
@@ -233,8 +219,8 @@ const ComputerVision = () => {
                 </div>
                 <div className="flex items-center">
                   <img
-                    src="/images/services/nlp.jpg"
-                    alt="Natural Language Processing"
+                    src={data.image}
+                    alt={data.title}
                     className="max-w-full rounded-lg shadow-md"
                   />
                 </div>

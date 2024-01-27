@@ -153,7 +153,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-4/12">
-            <div className="mt-12 mb-10 rounded-md bg-primary bg-opacity-5 p-6 dark:bg-opacity-5 lg:mt-0">
+            {/* <div className="mt-12 mb-10 rounded-md bg-primary bg-opacity-5 p-6 dark:bg-opacity-5 lg:mt-0">
               <form className="flex items-center justify-between">
                 <input
                   type="text"
@@ -175,7 +175,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                   </svg>
                 </button>
               </form>
-            </div>
+            </div> */}
             <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
               <h3 className="border-b border-body-color border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                 Related Posts
@@ -193,7 +193,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                 ))}
               </ul>
             </div>
-            <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
+            {/* <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
               <h3 className="border-b border-body-color border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                 Popular Category
               </h3>
@@ -239,8 +239,8 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                   </a>
                 </li>
               </ul>
-            </div>
-            <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
+            </div> */}
+            {/* <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
               <h3 className="border-b border-body-color border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                 Popular Tags
               </h3>
@@ -251,7 +251,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                 <TagButton text="Startup" />
                 <TagButton text="Business" />
               </div>
-            </div>
+            </div> */}
 
             <NewsLatterBox />
           </div>

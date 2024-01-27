@@ -28,16 +28,16 @@ const page = async ({ searchParams }: Props) => {
 
   return (
     <main className="flex-center paddings mx-auto w-full max-w-screen-2xl flex-col">
-      <section className="nav-padding w-full">
+      <section className="nav-padding w-full mb-10">
         <div className="flex-center relative min-h-[274px] w-full flex-col rounded-xl bg-banner bg-cover bg-center text-center">
           <h1 className="sm:heading1 heading2 mb-6 text-center text-white dark:text-white">
             Aimate Resources
           </h1>
         </div>
-        <SearchForm />
+        {/* <SearchForm /> */}
       </section>
-      <Filters />
-      {(searchParams?.query || searchParams?.category) && (
+      {/* <Filters /> */}
+      {/* {(searchParams?.query || searchParams?.category) && (
         <section className="flex-center mt-6 w-full flex-col sm:mt-20">
           <SubHeader
             category={searchParams?.category || ""}
@@ -65,7 +65,7 @@ const page = async ({ searchParams }: Props) => {
             )}
           </div>
         </section>
-      )}
+      )} */}
 
       <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
         {blogs && blogs.map((blog: any) => <SingleBlog blog={blog} />)}

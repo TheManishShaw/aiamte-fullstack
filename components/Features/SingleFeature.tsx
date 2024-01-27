@@ -1,33 +1,10 @@
 import { Feature } from "@/types/feature";
-import Image from "next/image";
 import Link from "next/link";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, image, title, paragraph, url } = feature;
   return (
-    <>
-      {/* <div className="wrapper  text-gray-900 group transform cursor-pointer antialiased  transition-all duration-200 ease-in-out hover:scale-105">
-        <Link href={url}>
-          <img
-            src={image}
-            alt=" random imgee"
-            className="h-72 w-full  rounded-lg object-cover object-center shadow-md "
-          />
-
-          <div className="relative -mt-16 px-4  duration-200 group-hover:-translate-y-6 ">
-            <div className="rounded-lg bg-white p-6 text-primary shadow-lg dark:bg-dark">
-              <h4 className="mt-1 truncate text-xl font-bold uppercase leading-tight text-black group-hover:underline dark:text-white">
-                {title}
-              </h4>
-
-              <div className="mt-1 text-base font-medium leading-relaxed text-body-color">
-                {paragraph}
-              </div>
-            </div>
-          </div>
-        </Link>
-      </div> */}
-
+    <div>
       <Link
         className="group flex flex-col h-full  dark:bg-secondary border border-gray-200 dark:border-transparent  hover:shadow-xl transition-all duration-300 rounded-md p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-primary/[.2] hover:scale-[1.01]"
         href={url}
@@ -47,8 +24,26 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
             {paragraph}
           </p>
         </div>
+        <span className="hover:scale-105 self-center text-md flex gap-2 text-slate-500">
+          Learn More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-arrow-right"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </span>
       </Link>
-    </>
+    </div>
   );
 };
 
