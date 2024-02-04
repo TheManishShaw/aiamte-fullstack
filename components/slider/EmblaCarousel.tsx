@@ -12,20 +12,20 @@ const SLIDES = [
       "We always work to fulfill the requirements for data collection and gathering by utilizing cutting-edge technology and AI-driven solutions. For the planning, development, implementation, and deployment of AI and ML projects, we offer field data, including training and testing data.",
   },
   {
+    title: "Precision in Data, Excellence in AI Training",
+    description:
+      "Premium data covering a range of data formats i.e. text, audio, images, documents and videos.",
+  },
+  {
+    title: "Boundless Trust, Data Security.",
+    description:
+      "Curating high-quality datasets with meticulous precision, we excel in collecting AI-relevant data, fostering excellence in various domains of artificial intelligence training.",
+  },
+  {
     title:
-      "Premium data covering a range of data formats i.e. text, audio, images, and videos.",
+      "Quality BFSI  Document AI Data Available in various Formats For: NER, KPE, and OCR etc.",
     description:
-      "We always work to fulfill the requirements for data collection and gathering by utilizing cutting-edge technology and AI-driven solutions. For the planning, development, implementation, and deployment of AI and ML projects, we offer field data, including training and testing data.",
-  },
-  {
-    title: "Your Trusted AI Partner in Growth.",
-    description:
-      "Premium data covering a range of data formats i.e. text, audio, images, and videos.",
-  },
-  {
-    title: "Your Trusted AI Partner in Growth.",
-    description:
-      "Quality data available in various formats for NER, KPE, and OCR",
+      "Dependable Data Solutions for Document AI, ensuring reliability and excellence in information extraction, classification, and overall document processing efficiency.",
   },
 ];
 
