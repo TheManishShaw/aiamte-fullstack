@@ -22,8 +22,7 @@ const SLIDES = [
       "Curating high-quality datasets with meticulous precision, we excel in collecting AI-relevant data, fostering excellence in various domains of artificial intelligence training.",
   },
   {
-    title:
-      "Quality BFSI  Document AI Data Available in various Formats For: NER, KPE, and OCR etc.",
+    title: "Quality BFSI  Document AI Data Available.",
     description:
       "Dependable Data Solutions for Document AI, ensuring reliability and excellence in information extraction, classification, and overall document processing efficiency.",
   },

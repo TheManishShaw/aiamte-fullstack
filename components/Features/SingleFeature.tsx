@@ -6,7 +6,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   return (
     <div>
       <Link
-        className="group flex flex-col h-full  dark:bg-secondary border border-gray-200 dark:border-transparent  hover:shadow-xl transition-all duration-300 rounded-md p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-primary/[.2] hover:scale-[1.01]"
+        className="group flex flex-col h-full  dark:bg-secondary border border-gray-200 dark:border-transparent  hover:shadow-xl transition-all duration-300 rounded-lg p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-primary/[.2] hover:scale-[1.08]"
         href={url}
       >
         <div className="aspect-w-16 aspect-h-11">
