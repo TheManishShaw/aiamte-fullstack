@@ -86,14 +86,14 @@ const page = () => {
                     </h2>
                     <p className="text-xl ">
                       By accessing the website at{" "}
-                      <a
+                      <Link
                         href="https://www.aimate.in"
                         className="text-blue-500 hover:underline"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         https://www.aimate.in
-                      </a>
+                      </Link>
                       , you are agreeing to be bound by these terms of service,
                       all applicable laws, and regulations, and agree that you
                       are responsible for compliance with any applicable local

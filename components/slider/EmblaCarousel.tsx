@@ -77,9 +77,7 @@ const EmblaCarousel: React.FC<PropType> = ({ options }) => {
       emblaApi.off("select", onSelect);
     };
   }, [emblaApi, onInit, onSelect]);
-  {
-    console.log("first", imageByIndex);
-  }
+
   return (
     <>
       <div className="embla">
@@ -93,7 +91,6 @@ const EmblaCarousel: React.FC<PropType> = ({ options }) => {
               //     ? imgData.src
               //     : ""; // Assigning src or an empty string if imgData is undefined
 
-              console.log("src", src);
               return (
                 <div className="embla__slide" key={index}>
                   <div className="embla__slide__overlay" />
