@@ -10,7 +10,7 @@ const checkIcon = (
 const AboutSectionOne = () => {
   const List = ({ text }: any) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
-      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-white bg-opacity-30 text-white">
+      <span className="mr-4 flex h-[30px] w-[30px] items-center p-2 justify-center rounded-md bg-white bg-opacity-30 text-white">
         {checkIcon}
       </span>
       {text}
@@ -23,32 +23,6 @@ const AboutSectionOne = () => {
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="What We Do Best     "
-                paragraph="We have vast amounts of structured big data in a variety of categories ready to be put toward your project success. From healthcare and technology to so much more, find what you’re looking for to train your models."
-                mb="44px"
-              />
-
-              <div className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0">
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="AI Training Data" />
-                    <List text="Data Collection, Labeling & Annotation" />
-                    <List text="Data Catalogs & Licensing" />
-                    <List text="Computer Vision" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Conversational AI" />
-                    <List text="Healthcare AI" />
-                    <List text="Sentiment Analysis Services" />
-                    <List text="Facial Recognition" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full px-4 lg:w-1/2">
               <div className="wow fadeInUp  relative mx-auto  aspect-[25/24] w-[80%] lg:mr-0">
                 <Image
                   src="/images/about/machine-learning.png"
@@ -56,6 +30,48 @@ const AboutSectionOne = () => {
                   fill
                   className="mx-auto lg:mr-0"
                 />
+              </div>
+            </div>
+            <div className="w-full px-4 lg:w-1/2">
+              <SectionTitle
+                title="What We Do Best     "
+                paragraph="We have vast amounts of structured big data in a variety of categories ready to be put toward your project success. From healthcare and technology to so much more, find what you’re looking for to train your models."
+                mb="44px"
+              />
+
+              {/* 
+
+
+
+
+
+
+ */}
+
+              <div className="wow fadeInUp mb-12 max-w-[780px] lg:mb-0">
+                <div className="mx-[-12px] flex flex-wrap">
+                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                    {/* <List text="AI Training Data" />
+                    <List text="Data Collection, Labeling & Annotation" />
+                    <List text="Data Catalogs & Licensing" />
+                    <List text="Computer Vision" /> */}
+                    <List text="Including Human Insights in Data That Are Actionable." />
+                    <List text="Take benefit of our Local relevance partnered with global expertise in AI" />
+                    <List text="Pairing human intelligence with AI to spark discoveries around the globe." />
+                    <List text="A global source of unique and important human input regarding unstructured data." />
+                  </div>
+
+                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                    {/* <List text="Conversational AI" />
+                    <List text="Healthcare AI" />
+                    <List text="Sentiment Analysis Services" />
+                    <List text="Facial Recognition" /> */}
+                    <List text="Data to Insight, Now Accessible Worldwide." />
+                    <List text="AI Data Training for Any Language and Any Context." />
+                    <List text="AI guidance that has been authorized by people, but anonymously" />
+                    <List text="The most advanced human-powered data annotation platform around the world, independent of language." />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

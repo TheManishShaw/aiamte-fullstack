@@ -35,7 +35,7 @@ const AboutSectionTwo = () => {
 
             <div className="hidden lg:flex lg:w-1/2 lg:justify-center">
               <img
-                className="w-[38rem] h-[28rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[40rem] rounded-3xl"
+                className="w-[38rem] h-[25rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-3xl"
                 src="/images/services/AI.jpg"
                 alt=""
               />
