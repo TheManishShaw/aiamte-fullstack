@@ -10,28 +10,27 @@ const documentAi = [
     total: "110k+",
     icon: "",
     title:
-      " Bank Statement Dataset(Synthetic) off the shelf trainning data for Document AI",
+      " Bank Statement (Synthetic) off the shelf trainning data for Document AI",
   },
   {
     id: 2,
     total: "140k+",
     icon: "",
     title:
-      " Check/Cheque Dataset(Synthetic) off the shelf trainning data for Document AI",
+      " Check/Cheque (Synthetic) off the shelf trainning data for Document AI",
   },
   {
     id: 3,
     total: " 100k+",
     icon: "",
     title:
-      "  Payslips Dataset(Synthetic) off the shelf trainning data for Document AI",
+      "  Payslips (Synthetic) off the shelf trainning data for Document AI",
   },
   {
     id: 4,
     total: "105k+",
     icon: "",
-    title:
-      " Taxform Dataset(Synthetic) off the shelf trainning data for Document AI",
+    title: " Taxform (Synthetic) off the shelf trainning data for Document AI",
   },
   {
     id: 5,
@@ -121,20 +120,17 @@ const Video = () => {
                     className="relative z-40 object-cover w-full h-full rounded"
                   />
                   <img
-                    src="/images/Salary slip.png"
-                    className="relative z-40 object-cover w-full h-full rounded"
-                  />
-                  <img
-                    src="/images/Check Annotation.png"
+                    src="/images/Check.png"
                     className="relative z-40 object-cover w-full h-full rounded"
                   />
                   <img
                     src="/images/Salary slip.png"
                     className="relative z-40 object-cover w-full h-full rounded"
                   />
+
                   <img
-                    src="/images/Account Statement.png"
-                    className="relative z-40 object-cover w-full h-full  rounded"
+                    src="/images/Loan Annotation.png"
+                    className="relative z-40 object-cover w-full h-full rounded"
                   />
                 </div>
                 {/* <img
