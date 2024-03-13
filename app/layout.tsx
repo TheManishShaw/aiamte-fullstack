@@ -4,6 +4,7 @@ import { Providers } from "./providers";
 import ScrollToTop from "@/components/ScrollToTop";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Aimate",
   description: "Data service company",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <Analytics />
           <Footer />
           <ScrollToTop />
         </Providers>
