@@ -23,7 +23,7 @@ const AboutPage = () => {
               <div className="relative">
                 <img
                   src="https://i.postimg.cc/QtyYkbxp/pexels-andrea-piacquadio-927022.jpg"
-                  alt=""
+                  alt="poster"
                   className="relative z-40 object-cover w-full h-96 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded"
                 />
                 <div className="absolute z-10 hidden w-full h-full bg-white rounded-bl-[80px] rounded -bottom-6 right-6 lg:block"></div>

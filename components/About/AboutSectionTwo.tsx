@@ -37,7 +37,7 @@ const AboutSectionTwo = () => {
               <img
                 className="w-[38rem] h-[25rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-3xl"
                 src="/images/services/AI.jpg"
-                alt=""
+                alt="AI"
               />
             </div>
           </div>

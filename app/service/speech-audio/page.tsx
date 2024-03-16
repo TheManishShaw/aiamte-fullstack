@@ -88,7 +88,7 @@ const SpeechAudio = () => {
                         <div className="flex flex-shrink-0 w-15 h-15 mr-6 items-center justify-center bg-blue-100 rounded-full">
                           <img
                             src="/saturn-assets/images/features/icon-element.svg"
-                            alt=""
+                            alt="icon"
                           />
                         </div>
                         <div>
@@ -107,7 +107,7 @@ const SpeechAudio = () => {
                   <img
                     className="block h-80 md:h-100 lg:h-auto xl:h-150 mx-auto"
                     src={data.image}
-                    alt=""
+                    alt="icon"
                   />
                 </div>
                 <div className="w-full lg:w-2/5 xl:w-auto mx-auto px-2 lg:pb-10">

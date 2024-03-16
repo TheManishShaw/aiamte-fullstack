@@ -113,23 +113,28 @@ const Video = () => {
                 <div className="columns-1 gap-5 sm:columns-2 sm:gap-8  [&>img:not(:first-child)]:mt-8">
                   <img
                     src="/images/Account Statement.png"
+                    alt="Account Statement"
                     className="relative z-40 object-cover w-full h-full  rounded"
                   />
                   <img
                     src="/images/Check Annotation.png"
+                    alt="Check Annotation"
                     className="relative z-40 object-cover w-full h-full rounded"
                   />
                   <img
                     src="/images/Check.png"
+                    alt="Check"
                     className="relative z-40 object-cover w-full h-full rounded"
                   />
                   <img
                     src="/images/Salary slip.png"
+                    alt="Salary Slip"
                     className="relative z-40 object-cover w-full h-full rounded"
                   />
 
                   <img
                     src="/images/Loan Annotation.png"
+                    alt="Loan Annotation"
                     className="relative z-40 object-cover w-full h-full rounded"
                   />
                 </div>
