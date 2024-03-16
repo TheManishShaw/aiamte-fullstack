@@ -66,8 +66,8 @@ const Header = () => {
                 <Image
                   src="/images/logo/logo.png"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={100}
+                  height={20}
                   className=" w-full "
                 />
               </Link>
