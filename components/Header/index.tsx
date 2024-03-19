@@ -156,9 +156,12 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <button className="rounded-lg  shadow-lg bg-primary px-6 py-3 font-semibold capitalize text-white hover:bg-primary/80">
+                <Link
+                  href={"/contact"}
+                  className="rounded-lg  shadow-lg bg-primary px-6 py-3 font-semibold capitalize text-white hover:bg-primary/80"
+                >
                   OTS Datasets
-                </button>
+                </Link>
                 <div>{/* <ThemeToggler /> */}</div>
               </div>
             </div>
