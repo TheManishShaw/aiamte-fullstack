@@ -53,7 +53,7 @@ const AboutPage = () => {
       <Video />
       <AboutSectionOne />
       <AboutSectionTwo />
-      <Team />
+      {/* <Team /> */}
     </>
   );
 };

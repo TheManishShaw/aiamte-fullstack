@@ -12,7 +12,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             center={true}
-            title="AI Trainning Data services"
+            title="AI Training Data services"
             paragraph="At Aimate, Our goal is improved accuracy that you can rely on.
             We can guarantee that our clients obtain accurate translation and interpretation services for their needs thanks to the use of contemporary technologies. Our technologies encompass a broad range of instruments and methodologies, such as content management systems, machine translation tools, Computer-assisted translation tools, and translation management system-related methodologies. Because of our improved quality assurance procedures, we are now able to provide both qualified and non-certified translators with high-quality translation and virtual interpretation services."
           />
