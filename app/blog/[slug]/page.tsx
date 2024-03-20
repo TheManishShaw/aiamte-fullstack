@@ -11,10 +11,10 @@ import React from "react";
 import { PortableText } from "@portabletext/react";
 import { format } from "date-fns";
 
-// export const metadata: Metadata = {
-//   title: "Blog Details | Aimate ",
-//   description: "BLog page",
-// };
+export const metadata: Metadata = {
+  title: "Blog Details | Aimate ",
+  description: "BLog page",
+};
 const page = async ({ params: { slug } }: { params: { slug: string } }) => {
   const blogData = await getSingleBlog(slug);
   const blogs = await getBlogs();
